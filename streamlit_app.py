@@ -2,21 +2,21 @@ import streamlit as st
 import pandas as pd
 
 # 타이틀 설정
-st.title("Streamlit 기본 예제")
+st.title("Streamlit 내가 만드는 서비스")
 
 # 서브타이틀
-st.subheader("기본적인 표와 HTML 메시지 생성")
+st.subheader("잘 해보자")
 
 # 표 데이터 생성
 data = {
-    '이름': ['홍길동', '김철수', '이영희'],
+    '이름': ['곽두팔', '김두식', '이헌식'],
     '나이': [25, 30, 22],
-    '직업': ['학생', '회사원', '디자이너']
+    '직업': ['건달아님', '평범한 인간', '셰프']
 }
 df = pd.DataFrame(data)
 
 # 표 출력
-st.write("기본적인 표:")
+st.write("걍 해:")
 st.dataframe(df)
 
 # HTML 메시지 출력
